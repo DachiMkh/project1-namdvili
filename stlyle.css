@@ -141,8 +141,6 @@ body .third .thirdButtom {
   display: flex;
   justify-content: center;
   gap: 20px;
-  display: flex;
-  flex-wrap: wrap;
 }
 body .third .thirdSame h3 {
   width: 370px;
@@ -169,7 +167,7 @@ body .fifth {
   width: 100%;
   height: 800px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 body .fifth .fifthHead {
   height: 190px;
@@ -336,10 +334,13 @@ body footer .fotBottom a {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
+    flex-direction: column !important;
   }
   .thirdButtom {
     display: flex !important;
     justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
   }
   .thirdSame {
     width: 250px !important;
@@ -352,6 +353,12 @@ body footer .fotBottom a {
   }
   .thirdSame h3 {
     width: 100px !important;
+  }
+  .fifth {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
   }
   .fifthSame {
     width: 1500px !important;
@@ -367,6 +374,9 @@ body footer .fotBottom a {
 }
 @media screen and (max-width: 767px) {
   .head2 button {
+    display: none;
+  }
+  .head2 .carti {
     display: none;
   }
   .first h1 {
@@ -387,12 +397,15 @@ body footer .fotBottom a {
     width: 100% !important;
   }
   .third {
-    display: flex !important;
-    flex-wrap: wrap !important;
     width: 100% !important;
+    margin-top: 500px;
   }
   .third .thirdButtom {
     background-color: #FFF7D8 !important;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: none !important;
+    height: 4000px !important;
   }
   .third .thirdSame {
     background-color: #FFF7D8 !important;
@@ -400,10 +413,33 @@ body footer .fotBottom a {
   .third .thirdSame p {
     font-size: 13px;
   }
-  .fourth {
-    margin-top: 1000px !important;
-  }
   .fourth img {
-    height: 400px !important;
+    display: none;
+  }
+  .fifth {
+    margin-top: 500px;
+  }
+  .fifth button {
+    margin-top: 2000px;
+  }
+  .sameistvis {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer {
+    margin-top: 1000px;
+  }
+  footer h2 {
+    display: none;
+  }
+  footer p {
+    display: none;
+  }
+  footer input {
+    width: 110px !important;
+  }
+  footer div {
+    display: flex !important;
+    flex-wrap: wrap !important;
   }
 }/*# sourceMappingURL=stlyle.css.map */
