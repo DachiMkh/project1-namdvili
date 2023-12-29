@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +9,10 @@
   font-family: "Alumni Sans Collegiate One", sans-serif;
 }
 
+body {
+  animation-name: ganateba;
+  animation-duration: 0.5s;
+}
 body header {
   background-color: #FFF7D8;
   width: 100%;
@@ -13,6 +21,9 @@ body header {
   position: fixed;
   top: 0;
   z-index: 2;
+}
+body header .fa-bars {
+  display: none;
 }
 body header .head1 {
   display: flex;
@@ -83,7 +94,7 @@ body .first h1 {
   padding-left: 50px;
 }
 body .first button {
-  margin-top: 350px;
+  margin-top: 340px;
   margin-left: 75%;
   border: 1px black solid;
   width: 250px;
@@ -113,6 +124,7 @@ body .second p {
 body .third {
   height: 700px;
   background-color: #FFF7D8;
+  justify-content: center;
 }
 body .third .thirdHead {
   height: 150px;
@@ -129,6 +141,8 @@ body .third .thirdButtom {
   display: flex;
   justify-content: center;
   gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 body .third .thirdSame h3 {
   width: 370px;
@@ -154,6 +168,8 @@ body .fourth img {
 body .fifth {
   width: 100%;
   height: 800px;
+  display: flex;
+  flex-wrap: wrap;
 }
 body .fifth .fifthHead {
   height: 190px;
@@ -163,4 +179,231 @@ body .fifth .fifthHead {
 }
 body .fifth .fifthHead h2 {
   font-size: 40px;
+}
+body .fifth .sameistvis {
+  height: 380px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+body .fifth .fifthSame {
+  width: 20%;
+  height: 350px;
+}
+body .fifth .fifthSame img {
+  width: 280px;
+  height: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .fifth .fifthSame p {
+  margin-top: 10px;
+}
+body .fifth .fifthSame a {
+  text-decoration: none;
+  color: black;
+}
+body .fifth .fifthSame .grey {
+  color: grey;
+}
+body .fifth .fifthEnd {
+  width: 100%;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .fifth .fifthEnd button {
+  background-color: #FFF7D8;
+  width: 300px;
+  height: 80px;
+  border: solid 1px black;
+  font-size: 40px;
+  cursor: pointer;
+  transition: 1s;
+}
+body .fifth .fifthEnd button:hover {
+  background-color: green;
+  color: #FFF7D8;
+}
+body footer {
+  background-color: #D2E1EE;
+  width: 100%;
+  height: 630px;
+}
+body footer .fotTop {
+  width: 100%;
+  height: 590px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body footer .fotTop .topLeft {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+body footer .fotTop .topLeft p {
+  width: 239px;
+}
+body footer .fotTop .topLeft a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  margin-right: 140px;
+}
+body footer .fotTop .topRight {
+  width: 50%;
+  height: 590px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+body footer .fotTop .topRight a {
+  text-decoration: none;
+  color: black;
+}
+body footer .fotTop .topRight .mon {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+body footer .fotTop .topRight form input {
+  background-color: #D2E1EE;
+  border: 3px solid black;
+  width: 350px;
+  height: 55px;
+  padding-left: 10px;
+}
+body footer .fotTop .topRight form div {
+  display: flex;
+}
+body footer .fotTop .topRight form div button {
+  background-color: black;
+  color: #D2E1EE;
+  width: 110px;
+  height: 55px;
+  border: none;
+  transition: 1s;
+  cursor: pointer;
+}
+body footer .fotTop .topRight form div button:hover {
+  background-color: green;
+}
+body footer .fotBottom {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body footer .fotBottom a {
+  color: black;
+}
+
+/* animacia */
+@keyframes ganateba {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .head1 ul {
+    display: none;
+  }
+  .head1 .fa-bars {
+    display: block !important;
+    font-size: 30px;
+  }
+  .first h1 {
+    font-size: 70px !important;
+    width: 400px !important;
+    padding-top: 20px !important;
+    padding-left: 20px !important;
+  }
+  .first button {
+    margin-left: 55% !important;
+  }
+  .third {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .thirdButtom {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .thirdSame {
+    width: 250px !important;
+  }
+  .thirdSame img {
+    width: 230px !important;
+  }
+  .thirdSame p {
+    width: 200px !important;
+  }
+  .thirdSame h3 {
+    width: 100px !important;
+  }
+  .fifthSame {
+    width: 1500px !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .fifthSame img {
+    width: 150px !important;
+  }
+  footer input {
+    width: 200px !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .head2 button {
+    display: none;
+  }
+  .first h1 {
+    padding-left: 0px !important;
+    padding-top: 0px !important;
+    width: 100px !important;
+  }
+  .first button {
+    margin-top: 50px !important;
+    margin-left: 50px !important;
+  }
+  .second {
+    display: flex !important;
+    align-items: flex-start !important;
+  }
+  .second p {
+    height: 100px !important;
+    width: 100% !important;
+  }
+  .third {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    width: 100% !important;
+  }
+  .third .thirdButtom {
+    background-color: #FFF7D8 !important;
+  }
+  .third .thirdSame {
+    background-color: #FFF7D8 !important;
+  }
+  .third .thirdSame p {
+    font-size: 13px;
+  }
+  .fourth {
+    margin-top: 1000px !important;
+  }
+  .fourth img {
+    height: 400px !important;
+  }
 }/*# sourceMappingURL=stlyle.css.map */
