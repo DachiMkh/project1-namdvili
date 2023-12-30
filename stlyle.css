@@ -11,7 +11,7 @@ html {
 
 body {
   animation-name: ganateba;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
 }
 body header {
   background-color: #FFF7D8;
@@ -388,19 +388,22 @@ body footer .fotBottom a {
   }
   .first button {
     margin-top: 50px !important;
-    margin-left: 50px !important;
+    margin-left: 20px !important;
   }
   .second {
     display: flex !important;
-    align-items: flex-start !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 500px !important;
+    width: 100% !important;
   }
   .second p {
-    height: 100px !important;
+    height: 300px !important;
     width: 100% !important;
   }
   .third {
     width: 100% !important;
-    margin-top: 500px;
+    margin-top: 600px;
   }
   .third .thirdButtom {
     background-color: #FFF7D8 !important;
@@ -423,6 +426,7 @@ body footer .fotBottom a {
   }
   .fifth button {
     margin-top: 2000px;
+    width: 200px !important;
   }
   .sameistvis {
     display: flex;
@@ -444,6 +448,10 @@ body footer .fotBottom a {
     display: flex !important;
     flex-wrap: wrap !important;
   }
+  footer .fotTop {
+    display: flex !important;
+    flex-direction: column !important;
+  }
   footer .fotTop .topLeft div {
     display: flex !important;
     align-items: center !important;
@@ -453,5 +461,8 @@ body footer .fotBottom a {
     display: flex !important;
     justify-content: center !important;
     gap: 10px !important;
+  }
+  footer .topRight a {
+    font-size: 13px !important;
   }
 }/*# sourceMappingURL=stlyle.css.map */

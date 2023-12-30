@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alumni Sans Collegiate One', sans-serif;
+}
+body{
+    animation-name: ganateba ;
+    animation-duration: 1s;
+    background: linear-gradient(90deg, rgba(210,225,238,1) 0%, rgba(255,247,216,1) 72%, rgba(255,165,165,1) 100%);
+    display: flex;
+    justify-content: center;
+    // headerze mushaoba
+header{
+    background-color: #FFF7D8;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    .fa-bars{
+        display: none;
+    }
+    .head1{
+        h2{
+            font-size: 40px;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+                transition: 1s;
+        }
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+        height: 80px;
+    }
+    ul{
+        display: flex;
+        gap: 40px;
+        list-style: none;
+        a:hover{
+            color: green;
+        }
+    }
+    .head2{
+        a{
+            color:black;
+            text-decoration: none;
+            transition: 1s;
+        }
+        a:hover{
+            color: rgb(96, 87, 87);
+        }
+        width: 50%;
+        height: 80px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 40px;
+        button{
+            margin-right: 50px;
+            background-color: black;
+            color: white;
+            border: none;
+            height: 40px;
+            width: 150px;
+            transition: 1s;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color:green; ;
+        }
+    }
+}
+        form{
+            background-color: white;
+            border-radius:10px ;
+            margin-top: 150px;
+            width: 40%;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            .forButton{
+                height: 35px;
+                width: 300px;
+                margin-inline: 20px;
+                border-radius: 15px;
+                border: none;
+                background-color: #FFF7D8;
+                color: grey;
+                font-size: 22px;
+                cursor: pointer;
+                transition: 1s;
+            }
+            .forButton:hover{
+                background-color: green;
+                color: #FFF7D8;
+            }
+            .logins{
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                height: 150px;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+                .formFirst{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 25%;
+                    gap: 10px;
+                    width: 100%;
+                    .fa-lock{
+                        position: relative;
+                        bottom: -58px;
+                    }
+                    .fa-user{
+                        position: relative;
+                        bottom: -58px;
+                    }
+                    input{
+                        border:none;
+                        width: 75%;
+                        border-bottom: 2px solid;
+                        height: 30px;
+                        padding-left: 25px;
+                    } 
+                    input:focus{
+                        outline: none;
+                    }                   
+                }
+            }
+            .icons{
+                width: 200px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 25px;
+                .fa-facebook-f{
+                    color: blue;
+                    font-size: 25px;
+                }
+                .fa-twitter{
+                    color: aqua;
+                    font-size: 25px;
+                }
+                .fa-envelope{
+                    font-size: 25px;
+                    color: rgb(215, 76, 76);
+                }
+            }
+        }
+}
+@keyframes ganateba {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media  screen and (max-width: 1163px) {
+    .head1{
+        ul{
+            display: none;
+        }
+        .fa-bars{
+            display: block !important;
+            font-size: 30px;
+        }
+    }
+    form{
+        width: 40% !important;
+        margin-top: 110px !important;
+        .forButton{
+            width: 150px !important;
+        }
+    }
+
+}
+
+@media  screen and (max-width: 767px){
+    .head2{
+        button{
+            display: none;
+        }
+        .carti{
+            display: none;
+        }
+    }
+    form{
+        width: 65% !important;
+        .logins{
+            ::-webkit-input-placeholder{
+                color: white;
+            }
+        }
+        .forButton{
+            width: 120px !important;
+        }
+    }
+}

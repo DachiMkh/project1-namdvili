@@ -9,7 +9,7 @@ html{
 }
 body{
     animation-name: ganateba ;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     // headerze mushaoba
 header{
     background-color: #FFF7D8;
@@ -407,20 +407,23 @@ footer{
         }
         button{
             margin-top: 50px  !important;
-            margin-left: 50px  !important;
+            margin-left: 20px  !important;
         }
     }
     .second{
         display: flex !important;
-            align-items: flex-start !important;
+            align-items: center !important;
+            justify-content: center !important;
+            height: 500px !important;
+            width: 100% !important;
         p{
-            height: 100px !important;
+            height: 300px !important;
             width: 100% !important;
         }
     }
     .third{
         width: 100% !important;
-        margin-top:500px ;
+        margin-top:600px ;
         .thirdButtom{
             background-color: #FFF7D8 !important;
             display: flex;
@@ -444,6 +447,7 @@ footer{
         margin-top: 500px;
         button{
             margin-top: 2000px;
+            width: 200px !important;
         }
     }
     .sameistvis{
@@ -466,6 +470,8 @@ footer{
             flex-wrap: wrap !important;
         }
         .fotTop{
+            display: flex !important; 
+            flex-direction: column !important;
         .topLeft{
             div{
             display: flex !important;
@@ -478,6 +484,9 @@ footer{
             display: flex !important;
             justify-content: center !important;
             gap: 10px !important;
+             a{
+                font-size: 13px !important;
+             }
             
         }
     }
