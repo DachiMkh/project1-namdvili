@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alumni Sans Collegiate One", sans-serif;
+}
+
+body {
+  animation-name: ganateba;
+  animation-duration: 1s;
+  display: flex;
+  justify-content: center;
+}
+body header {
+  background-color: #FFF7D8;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+body header .fa-bars {
+  display: none;
+}
+body header .head1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: 80px;
+}
+body header .head1 h2 {
+  font-size: 40px;
+}
+body header .head1 a {
+  color: black;
+  text-decoration: none;
+  transition: 1s;
+}
+body header ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+body header ul a:hover {
+  color: green;
+}
+body header .head2 {
+  width: 50%;
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+}
+body header .head2 a {
+  color: black;
+  text-decoration: none;
+  transition: 1s;
+}
+body header .head2 a:hover {
+  color: rgb(96, 87, 87);
+}
+body header .head2 button {
+  margin-right: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  height: 40px;
+  width: 150px;
+  transition: 1s;
+  cursor: pointer;
+}
+body header .head2 button:hover {
+  background-color: green;
+}
+body footer {
+  background-color: #D2E1EE;
+  width: 100%;
+  height: 630px;
+}
+body footer .fotTop {
+  width: 100%;
+  height: 590px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body footer .fotTop .topLeft {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+body footer .fotTop .topLeft p {
+  width: 239px;
+}
+body footer .fotTop .topLeft a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  margin-right: 140px;
+}
+body footer .fotTop .topRight {
+  width: 50%;
+  height: 590px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+body footer .fotTop .topRight a {
+  text-decoration: none;
+  color: black;
+}
+body footer .fotTop .topRight .mon {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+body footer .fotTop .topRight form input {
+  background-color: #D2E1EE;
+  border: 3px solid black;
+  width: 350px;
+  height: 55px;
+  padding-left: 10px;
+}
+body footer .fotTop .topRight form div {
+  display: flex;
+}
+body footer .fotTop .topRight form div button {
+  background-color: black;
+  color: #D2E1EE;
+  width: 110px;
+  height: 55px;
+  border: none;
+  transition: 1s;
+  cursor: pointer;
+}
+body footer .fotTop .topRight form div button:hover {
+  background-color: green;
+}
+body footer .fotTop .topRight .fotBottom {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body footer .fotTop .topRight .fotBottom a {
+  color: black;
+}
+
+@keyframes ganateba {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=aboutus.css.map */
