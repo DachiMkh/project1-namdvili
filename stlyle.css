@@ -188,6 +188,8 @@ body .fifth .sameistvis {
 body .fifth .fifthSame {
   width: 20%;
   height: 350px;
+  display: flex;
+  justify-content: center;
 }
 body .fifth .fifthSame img {
   width: 280px;
@@ -313,7 +315,7 @@ body footer .fotBottom a {
     opacity: 1;
   }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1163px) {
   .head1 ul {
     display: none;
   }
@@ -441,5 +443,15 @@ body footer .fotBottom a {
   footer div {
     display: flex !important;
     flex-wrap: wrap !important;
+  }
+  footer .fotTop .topLeft div {
+    display: flex !important;
+    align-items: center !important;
+    width: 50% !important;
+  }
+  footer .topRight {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 10px !important;
   }
 }/*# sourceMappingURL=stlyle.css.map */

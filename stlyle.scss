@@ -192,6 +192,8 @@ header{
     .fifthSame{
         width: 20%;
         height: 350px;
+        display: flex;
+        justify-content: center;
         img{
             width: 280px;
             height: 280px;
@@ -323,7 +325,7 @@ footer{
 }
 // pc istvis sheqmnilia
 // planshetebistvis
-@media  screen and (max-width: 1023px) {
+@media  screen and (max-width: 1163px) {
     .head1{
         ul{
             display: none;
@@ -462,6 +464,21 @@ footer{
         div{
             display: flex !important;
             flex-wrap: wrap !important;
+        }
+        .fotTop{
+        .topLeft{
+            div{
+            display: flex !important;
+            align-items: center!important;
+            width: 50% !important;
+            }
+        }
+    }
+        .topRight{
+            display: flex !important;
+            justify-content: center !important;
+            gap: 10px !important;
+            
         }
     }
 
