@@ -264,11 +264,15 @@ body footer .fotBottom a {
   .head2 .carti {
     display: none;
   }
+  .sameistvis1 {
+    margin-top: 800px !important;
+  }
   .fifthSame p {
     padding-left: 30px !important;
+    width: 200px !important;
   }
   footer {
-    margin-top: 1000px !important;
+    margin-top: 1500px !important;
   }
   footer h2 {
     display: none;
