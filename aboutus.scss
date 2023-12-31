@@ -7,8 +7,6 @@
 body{
     animation-name: ganateba ;
     animation-duration: 1s;
-    display: flex;
-    justify-content: center;
     // headerze mushaoba
 header{
     background-color: #FFF7D8;
@@ -75,8 +73,59 @@ header{
     }
 }
 // //////////////////////////////////
-
-
+.firstText{
+    width: 100%;
+    margin-top: 80px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    h1{
+        font-size: 45px;
+    }
+    h2{
+        font-size: 33px;
+        width: 770px;
+        text-align: center;
+    }
+}
+.secondText{
+    height: 700px;
+    background-color:#FFF7D8 ;
+    .scHead{
+        height: 150px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2{
+            font-size: 40px;
+        }
+    }
+    .scButtom{
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .scSame{
+        h3{
+            width: 370px;
+            margin-top: 15px;
+        }
+        p{
+            width:370px;
+            height: 70px;
+            margin-top:10px ;
+        }
+        img{
+            width: 370px;
+            height: 370px;
+            object-fit: cover;
+        }
+    }
+}
 // ////////////////////////////////
 footer{
     background-color: #D2E1EE;
@@ -145,16 +194,16 @@ footer{
                     }
                 }
             }
-            .fotBottom{
-                width: 100%;
-                height: 40px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                a{
-                    color: black;
-                }
-            }
+        }
+    }
+    .fotBottom{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+            color: black;
         }
     }
 }
@@ -167,3 +216,117 @@ footer{
       opacity: 1;
     }
   }
+  @media screen and (max-width: 1163px) {
+    .head1 ul {
+      display: none;
+    }
+    .head1 .fa-bars {
+      display: block !important;
+      font-size: 30px;
+    }
+    form {
+      width: 40% !important;
+      margin-top: 110px !important;
+    }
+    form .forButton {
+      width: 150px !important;
+    }
+    .firstText{
+        h2{
+            width: 700px !important;
+        }
+    }
+    .secondText{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-direction: column !important;
+    }
+    .scButtom{
+        display: flex !important;
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+        width: 100% !important;
+    }
+    .scSame{
+        img{
+            width: 230px  !important;
+        }
+        width: 250px !important;
+        p{
+            width: 200px !important;
+        }
+        h3{
+            width: 100px !important;
+        }
+    }
+    footer input {
+        width: 200px !important;
+      }
+  }
+  @media  screen and (max-width: 796px){
+    .secondText{
+        margin-top:600px ;
+    .scButtom{
+        background-color: #FFF7D8 !important;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: none !important;
+        height: 4000px !important;
+    }
+}
+    .head2{
+        button{
+            display: none;
+        }
+        .carti{
+            display: none;
+        }
+    }
+    .firstText{
+        h1{
+            text-align: center !important;
+        }
+        h2{
+            width: 280px !important;
+            height: 400px;
+        }
+    }
+    footer{
+        margin-top: 400px;
+        h2{
+            display: none;
+        }
+        p{
+            display: none;
+        }
+        input{
+            width: 95px !important;
+        }
+        div{
+            display: flex !important;
+            flex-wrap: wrap !important;
+        }
+        .fotTop{
+            display: flex !important; 
+            flex-direction: column !important;
+        .topLeft{
+            div{
+            display: flex !important;
+            align-items: center!important;
+            width: 50% !important;
+            }
+        }
+    }
+        .topRight{
+            display: flex !important;
+            justify-content: center !important;
+            gap: 10px !important;
+             a{
+                font-size: 13px !important;
+             }
+            
+        }
+    }
+
+}

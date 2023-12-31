@@ -124,7 +124,6 @@ body .second p {
 body .third {
   height: 700px;
   background-color: #FFF7D8;
-  justify-content: center;
 }
 body .third .thirdHead {
   height: 150px;
@@ -442,7 +441,7 @@ body footer .fotBottom a {
     display: none;
   }
   footer input {
-    width: 110px !important;
+    width: 95px !important;
   }
   footer div {
     display: flex !important;
